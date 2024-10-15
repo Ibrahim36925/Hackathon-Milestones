@@ -1,0 +1,85 @@
+*{
+   margin:0;
+   padding:0;
+   box-sizing:border-box;
+
+}
+.cv-container{
+    display:flex;
+    background-color:white;
+    width:80%;
+    margin:50px auto;
+    border-radius:10px;
+    box-shadow: 0 0 20px rgba(0, 0 , 0 , 0.1)
+}
+.left-sec{
+    background-color:#2c2c2c;
+    color:white;
+    padding:20px;
+    width:35%;
+    text-align: center;
+}
+.profile-pic{
+    width:140px;
+    height:140px;
+    margin-top:5%;
+    border-radius:50%;
+    border:5px solid #e0a020;
+    margin-bottom:10px
+}
+.head{
+      font-family: "Roboto";/
+      color:#0000;
+      border-radius:10px;
+      font-siize:55px;
+      margin:15px 0;
+  
+}
+
+.para{
+    font-size:15px;
+   margin:10px 0;
+   font-family:Roboto;
+
+}
+.para-3{
+    font-size:14px;
+  margin-left:15px;
+    font-family:Roboto;
+}
+
+ul>li>a{
+    color:white;
+    text-decoration:none
+}
+ul>li>a:hover{
+    color:#e0a020;
+}
+.right-sec{
+    padding:20px;
+    width:65%;
+    margin-left:10px
+}
+#toggle-skills{
+    border:none;
+    background-color:#e0a020;
+    color:white;
+    padding:5px 20px;
+    border-radius:9px;
+    margin-top:10px;
+    box-shadow:1px 2px 1px grey ;
+}
+
+
+@media(max-width:660px){
+    .cv-container{
+        display:flex;
+        flex-direction:column
+    }
+    .left-sec{
+        width:100%
+    }
+   .right-sec{
+    width:100%
+   }
+}
