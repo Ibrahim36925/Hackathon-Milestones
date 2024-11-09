@@ -1,22 +1,13 @@
-// Get references to the form and the resume content area
 var form = document.getElementById('form') as HTMLFormElement;
-// const resumeContent = document.createElement('div');
-// resumeContent.id = 'resume-content';
-// document.body.appendChild(resumeContent);
 var resumeContent = document.getElementById('resume-content')as HTMLElement
-// Function to handle form submission
 form.addEventListener('submit', (event) => {
-    event.preventDefault(); // Prevent the default form submission
-
-    // Retrieve values from the form
+    event.preventDefault(); 
     const name = (document.getElementById('name') as HTMLInputElement).value;
     const email = (document.getElementById('email') as HTMLInputElement).value;
     const phone = (document.getElementById('phone') as HTMLInputElement).value;
     const education = (document.getElementById('education') as HTMLTextAreaElement).value;
     const experience = (document.getElementById('experience') as HTMLTextAreaElement).value;
     const skills = (document.getElementById('skills') as HTMLInputElement).value.split(',');
-
-    // Create the resume content
     resumeContent.innerHTML = `
         <h3>Personal Information</h3>
         <p>Name:${name}</p>
